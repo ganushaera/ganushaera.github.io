@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Ganusha Eranda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="welcome.html"><span class="dot"></span> ganusha.dev</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Portfolio</a>
+      <a href="repair.html">Repair Services</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Hire me →</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero wrap" style="border-top:none;">
+    <div class="eyebrow"><span class="dot"></span> BLOG</div>
+    <h1>Notes on <span class="accent">code</span> & repairs.</h1>
+  </section>
+
+  <!-- EXAMPLE POSTS: EDIT ME — to add a new post, copy one whole <div class="blog-post">...</div> block, paste it above the others (so it shows first), then change the id (post-4, blog-post-4 etc — keep numbers unique), date, tag, title and text.
+       COMMENTS: each post has its own "Comments" button — clicking it loads a separate comment thread for that post (powered by giscus / GitHub Discussions, free, includes reactions, no database).
+       One-time setup (5 min): 1) push this site to a public GitHub repo  2) enable "Discussions" in repo Settings  3) go to https://giscus.app, fill in your repo, pick a category (e.g. "Blog Comments") — it gives you a repo-id and category-id  4) open nav.js, find GISCUS_CONFIG near the top, and paste those values in. That one edit turns on comments for every post. -->
+  <section class="wrap reveal">
+    <p class="section-kicker" style="margin-top:-24px;">To add a photo to a post: put a "photos" folder next to this file, drop an image in as blog-1.jpg (etc), then swap that post's placeholder &lt;div class="blog-post-media"&gt; for: &lt;div class="blog-post-media"&gt;&lt;img src="photos/blog-1.jpg" alt="[describe the photo]"&gt;&lt;/div&gt;. No photo yet? Just delete the whole &lt;div class="blog-post-media"&gt;...&lt;/div&gt; block for that post.</p>
+
+    <div class="blog-list">
+
+      <div class="blog-post" id="post-1">
+        <!-- EDIT ME: photo for this post — see instructions above -->
+        <div class="blog-post-media">
+          <div class="gallery-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>photos/blog-1.jpg</div>
+        </div>
+        <div class="blog-post-body">
+        <div class="blog-meta"><span class="tag">Software</span><span>19 Aug 2026</span></div>
+        <h3>[Post title goes here]</h3>
+        <p>[Write your post here. Keep it a few paragraphs — what you built, a bug you chased down, a lesson from a repair job, or anything worth sharing. Plain text is fine, no special formatting needed.]</p>
+        <div class="post-share">
+          <span class="post-share-label">Share:</span>
+          <a href="https://wa.me/?text=Check%20this%20out%3A%20https%3A%2F%2Fganusha.dev%2Fblog.html%23post-1" target="_blank" rel="noopener" class="share-btn" aria-label="Share on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.8-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.3 0-.1-.2-.2-.4-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.5 5.1L2 22l5-1.4C8.4 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3C3.9 15 3.3 13.5 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+          </a>
+          <a href="mailto:?subject=Worth%20a%20read&body=https%3A%2F%2Fganusha.dev%2Fblog.html%23post-1" class="share-btn" aria-label="Share by email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7L22 6"/></svg>
+          </a>
+          <button type="button" class="share-btn copy-link-btn" data-anchor="#post-1" aria-label="Copy link to this post">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 007.07 0l2.83-2.83a5 5 0 00-7.07-7.07L11.5 4.5"/><path d="M14 11a5 5 0 00-7.07 0L4.1 13.83a5 5 0 007.07 7.07l1.36-1.36"/></svg>
+          </button>
+        </div>
+
+        <!-- Comments for this post only — lazy-loaded on click via giscus (see GISCUS_CONFIG in nav.js) -->
+        <div class="post-comments">
+          <button type="button" class="comments-toggle" data-target="comments-post-1" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 01-8.5 8.5 8.4 8.4 0 01-4-1L3 20l1-4.5A8.5 8.5 0 1121 11.5z"/></svg>
+            <span>Comments</span>
+          </button>
+          <div class="giscus-mount" id="comments-post-1" data-term="blog-post-1"></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="blog-post" id="post-2">
+        <!-- EDIT ME: photo for this post — see instructions above -->
+        <div class="blog-post-media">
+          <div class="gallery-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>photos/blog-2.jpg</div>
+        </div>
+        <div class="blog-post-body">
+        <div class="blog-meta"><span class="tag tag-repair">Repair</span><span>[Date]</span></div>
+        <h3>[Post title goes here]</h3>
+        <p>[Write your post here.]</p>
+        <div class="post-share">
+          <span class="post-share-label">Share:</span>
+          <a href="https://wa.me/?text=Check%20this%20out%3A%20https%3A%2F%2Fganusha.dev%2Fblog.html%23post-2" target="_blank" rel="noopener" class="share-btn" aria-label="Share on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.8-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.3 0-.1-.2-.2-.4-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.5 5.1L2 22l5-1.4C8.4 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3C3.9 15 3.3 13.5 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+          </a>
+          <a href="mailto:?subject=Worth%20a%20read&body=https%3A%2F%2Fganusha.dev%2Fblog.html%23post-2" class="share-btn" aria-label="Share by email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7L22 6"/></svg>
+          </a>
+          <button type="button" class="share-btn copy-link-btn" data-anchor="#post-2" aria-label="Copy link to this post">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 007.07 0l2.83-2.83a5 5 0 00-7.07-7.07L11.5 4.5"/><path d="M14 11a5 5 0 00-7.07 0L4.1 13.83a5 5 0 007.07 7.07l1.36-1.36"/></svg>
+          </button>
+        </div>
+
+        <!-- Comments for this post only — lazy-loaded on click via giscus (see GISCUS_CONFIG in nav.js) -->
+        <div class="post-comments">
+          <button type="button" class="comments-toggle" data-target="comments-post-2" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 01-8.5 8.5 8.4 8.4 0 01-4-1L3 20l1-4.5A8.5 8.5 0 1121 11.5z"/></svg>
+            <span>Comments</span>
+          </button>
+          <div class="giscus-mount" id="comments-post-2" data-term="blog-post-2"></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="blog-post" id="post-3">
+        <!-- EDIT ME: photo for this post — see instructions above -->
+        <div class="blog-post-media">
+          <div class="gallery-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>photos/blog-3.jpg</div>
+        </div>
+        <div class="blog-post-body">
+        <div class="blog-meta"><span class="tag tag-shopify">Shopify</span><span>[Date]</span></div>
+        <h3>[Post title goes here]</h3>
+        <p>[Write your post here.]</p>
+        <div class="post-share">
+          <span class="post-share-label">Share:</span>
+          <a href="https://wa.me/?text=Check%20this%20out%3A%20https%3A%2F%2Fganusha.dev%2Fblog.html%23post-3" target="_blank" rel="noopener" class="share-btn" aria-label="Share on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.8-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.3 0-.1-.2-.2-.4-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.5 5.1L2 22l5-1.4C8.4 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3C3.9 15 3.3 13.5 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+          </a>
+          <a href="mailto:?subject=Worth%20a%20read&body=https%3A%2F%2Fganusha.dev%2Fblog.html%23post-3" class="share-btn" aria-label="Share by email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7L22 6"/></svg>
+          </a>
+          <button type="button" class="share-btn copy-link-btn" data-anchor="#post-3" aria-label="Copy link to this post">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 007.07 0l2.83-2.83a5 5 0 00-7.07-7.07L11.5 4.5"/><path d="M14 11a5 5 0 00-7.07 0L4.1 13.83a5 5 0 007.07 7.07l1.36-1.36"/></svg>
+          </button>
+        </div>
+
+        <!-- Comments for this post only — lazy-loaded on click via giscus (see GISCUS_CONFIG in nav.js) -->
+        <div class="post-comments">
+          <button type="button" class="comments-toggle" data-target="comments-post-3" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 01-8.5 8.5 8.4 8.4 0 01-4-1L3 20l1-4.5A8.5 8.5 0 1121 11.5z"/></svg>
+            <span>Comments</span>
+          </button>
+          <div class="giscus-mount" id="comments-post-3" data-term="blog-post-3"></div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Built by Ganusha Eranda · <span>status: available</span></div>
+</footer>
+
+<!-- FLOATING CONTACT — EDIT ME: swap the WhatsApp number (94XXXXXXXXX, no + or 0) and email below -->
+<div class="float-contact" id="floatContact">
+  <div class="float-menu" id="floatMenu">
+    <a href="https://wa.me/94XXXXXXXXX" target="_blank" rel="noopener" class="float-item wa">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.8-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.3 0-.1-.2-.2-.4-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.5 5.1L2 22l5-1.4C8.4 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3C3.9 15 3.3 13.5 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="mailto:your.email@example.com" class="float-item mail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7L22 6"/></svg>
+      <span>Email</span>
+    </a>
+  </div>
+  <button class="float-toggle" id="floatToggle" aria-label="Contact options" aria-expanded="false">
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 01-8.5 8.5 8.4 8.4 0 01-4-1L3 20l1-4.5A8.5 8.5 0 1121 11.5z"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+</div>
+
+<script src="nav.js"></script>
+</body>
+</html>
