@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganusha Eranda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+  <section class="welcome-screen">
+    <div class="welcome-orb orb-1" aria-hidden="true"></div>
+    <div class="welcome-orb orb-2" aria-hidden="true"></div>
+    <div class="greet-line"><span class="wave">👋</span><span id="greetText"></span><span class="cursor"></span></div>
+    <div class="welcome-badge"><span class="dot"></span> COLOMBO, SRI LANKA</div>
+    <h1>Ganusha<br><span class="accent">Eranda</span></h1>
+    <p class="hero-sub">Software Engineer by trade, systems troubleshooter at heart — pick where you'd like to start.</p>
+
+    <div class="welcome-paths">
+      <a class="path-card" href="index.html">
+        <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 4L3 12l5 8M16 4l5 8-5 8M13 3l-2 18"/></svg></div>
+        <h3>Software Engineer Portfolio</h3>
+        <p>My primary work — projects, skills, and Shopify / UI-UX builds.</p>
+        <div class="go">Enter portfolio →</div>
+      </a>
+      <a class="path-card" href="repair.html">
+        <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.4-3.4a5 5 0 01-6.6 6.6L4.6 22 2 19.4l10.5-10.5a5 5 0 016.6-6.6l-3.4 3.4z"/></svg></div>
+        <h3>Computer Repair Services</h3>
+        <p>Hardware & software repair work, with photos and customer reviews.</p>
+        <div class="go">View services →</div>
+      </a>
+    </div>
+
+    <div class="scroll-hint"><span>scroll</span><span class="line"></span></div>
+  </section>
+</main>
+
+<!-- FLOATING CONTACT — EDIT ME: swap the WhatsApp number (94XXXXXXXXX, no + or 0) and email below -->
+<div class="float-contact" id="floatContact">
+  <div class="float-menu" id="floatMenu">
+    <a href="https://wa.me/94XXXXXXXXX" target="_blank" rel="noopener" class="float-item wa">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.8-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.3 0-.1-.2-.2-.4-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.5 5.1L2 22l5-1.4C8.4 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3C3.9 15 3.3 13.5 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="mailto:your.email@example.com" class="float-item mail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7L22 6"/></svg>
+      <span>Email</span>
+    </a>
+  </div>
+  <button class="float-toggle" id="floatToggle" aria-label="Contact options" aria-expanded="false">
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 01-8.5 8.5 8.4 8.4 0 01-4-1L3 20l1-4.5A8.5 8.5 0 1121 11.5z"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+</div>
+
+<script src="nav.js"></script>
+</body>
+</html>
