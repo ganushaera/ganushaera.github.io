@@ -3,74 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ganusha Eranda — Software Engineer</title>
+<title>Ganusha Eranda — IT Support Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- අලුත් ලස්සන අකුරු මෝස්තර (Playfair Display & Inter) -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<header class="light-nav">
   <nav>
-    <div class="logo"><span class="dot"></span> ganusha.dev</div>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <div class="logo">Ganusha Eranda</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
     <div class="nav-links" id="navLinks">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
+      <a href="projects.html">Experience</a>
       <a href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
 <main>
-  <!-- HERO -->
-  <section class="hero wrap" style="border-top:none;">
-    <div class="eyebrow"><span class="dot"></span> OPEN TO WORK · RELOCATING TO DUBAI, UAE</div>
-    <h1>Ganusha Eranda<br>builds and <span class="accent">maintains</span><br>things that don't break.</h1>
-    <p class="hero-sub">Software Engineer with a systems-engineering foundation — I ship features and I understand what keeps them running in production.</p>
+  <!-- PREMIUM HERO SECTION -->
+  <section class="premium-hero">
+    <!-- Green Background Glow -->
+    <div class="green-glow"></div>
 
-    <div class="terminal" role="img" aria-label="Terminal panel showing status information">
-      <div class="terminal-bar"><span></span><span></span><span></span></div>
-      <div class="terminal-body">
-        <div class="line"><span class="prompt">$</span> whoami</div>
-        <div class="line out">&gt; Ganusha Eranda — Software Engineer</div>
-        <div class="line"><span class="prompt">$</span> location</div>
-        <div class="line out">&gt; Colombo, Sri Lanka (open to relocate)</div>
-        <div class="line"><span class="prompt">$</span> stack</div>
-        <div class="line out">&gt; PHP · JavaScript · React · Node.js · MySQL</div>
-        <div class="line"><span class="prompt">$</span> status<span class="cursor"></span></div>
-      </div>
+    <div class="hero-content">
+      <h2 class="hero-top-text">Hi I'm Ganusha</h2>
+      <h1 class="hero-main-title">IT Support <br><em>Engineer</em></h1>
     </div>
 
-    <div class="hero-cta">
-      <a href="projects.html" class="btn btn-primary">View projects</a>
-      <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+    <!-- User Image overlapping the text -->
+    <img src="Subheading.png" alt="Ganusha Eranda" class="hero-image">
+
+    <!-- Floating Elements -->
+    <div class="floating-pill left-pill">
+      <span class="dot-green"></span> Available for new opportunities
     </div>
+
+    <div class="floating-text right-text">
+      Passionate about maintaining enterprise <br>systems and creating reliable digital <br>experiences that connect users with value.
+    </div>
+
+    <a href="contact.html" class="btn-dark right-btn">➔ Get in Touch</a>
   </section>
 
-  <!-- QUICK HIGHLIGHTS -->
+  <!-- QUICK FACTS SECTION (Light Theme) -->
   <section class="wrap">
-    <div class="section-head"><span class="section-tag">01</span><h2>Quick facts</h2></div>
+    <div class="section-head"><h2>Quick facts</h2></div>
     <div class="modules">
       <div class="module">
         <div class="module-head"><h3>Background</h3></div>
-        <p style="color:var(--muted); font-size:14.5px;">4+ years in IT Support & Systems Engineering, now building software. <a href="about.html" style="color:var(--accent); border-bottom:1px dashed var(--accent);">Read more →</a></p>
+        <p>4+ years in IT Support & Systems Engineering, managing infrastructure for 100+ users.</p>
       </div>
       <div class="module">
         <div class="module-head"><h3>Certifications</h3></div>
         <div class="chip-row">
-          <span class="chip">ITIL 4 Foundation</span><span class="chip">IBM Cybersecurity Fundamentals</span>
+          <span class="chip">ITIL 4 Foundation</span><span class="chip">IBM Cybersecurity</span>
         </div>
       </div>
       <div class="module">
         <div class="module-head"><h3>Education</h3></div>
-        <p style="color:var(--muted); font-size:14.5px;">BSc (Hons) in IT — Software Engineering</p>
+        <p>BSc (Hons) in Information Technology — Software Engineering</p>
       </div>
       <div class="module">
         <div class="module-head"><h3>Right now</h3></div>
-        <p style="color:var(--muted); font-size:14.5px;">Looking for an entry-level Software Engineer role in Dubai. <a href="contact.html" style="color:var(--accent); border-bottom:1px dashed var(--accent);">Let's talk →</a></p>
+        <p>Open to relocation and looking for opportunities in Dubai, UAE.</p>
       </div>
     </div>
   </section>
