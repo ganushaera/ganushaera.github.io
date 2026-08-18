@@ -193,6 +193,53 @@
 
   /* ---------- ACTIVE NAV LINK ---------- */
   .nav-links a.active{ color: var(--accent); }
+/* =========================================
+   ✨ ANIMATIONS & HOVER EFFECTS ✨
+   ========================================= */
+
+/* 1. පිටුව ලෝඩ් වෙද්දී යට ඉඳන් උඩට එන Animation එක (Fade-in-up) */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero h1 { animation: fadeInUp 0.8s ease-out forwards; }
+.hero-sub { opacity: 0; animation: fadeInUp 0.8s ease-out 0.2s forwards; }
+.terminal { opacity: 0; animation: fadeInUp 0.8s ease-out 0.4s forwards; }
+.hero-cta { opacity: 0; animation: fadeInUp 0.8s ease-out 0.6s forwards; }
+.section-head { opacity: 0; animation: fadeInUp 0.8s ease-out 0.2s forwards; }
+.modules, .projects, .about-grid { opacity: 0; animation: fadeInUp 0.8s ease-out 0.4s forwards; }
+
+/* 2. කොටු උඩට මවුස් එක ගෙනිච්චම උඩට ඉස්සෙන Effect එක (3D Float Effect) */
+.module, .project, .stat-box {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.module:hover, .project:hover, .stat-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px -10px rgba(0,0,0,0.7);
+  border-color: var(--accent);
+}
+
+/* 3. Buttons වලට සහ ලින්ක් වලට දිලිසෙන Effect එකක් (Glow Effect) */
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 20px var(--accent-soft);
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* 4. අර කොළ පාට Status Dot එක ලස්සනට දිලිසෙන්න (Pulse Glow) */
+@keyframes neonGlow {
+  0%, 100% { box-shadow: 0 0 5px var(--status); }
+  50% { box-shadow: 0 0 15px var(--status), 0 0 25px var(--status); }
+}
+
+.logo .dot, .eyebrow .dot {
+  animation: neonGlow 2s infinite;
+}
 
   /* ---------- PAGE HERO (sub-pages) ---------- */
   .page-hero{ padding: 60px 0 20px; }
