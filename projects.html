@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Ganusha Eranda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="welcome.html"><span class="dot"></span> ganusha.dev</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Portfolio</a>
+      <a href="repair.html">Repair Services</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Hire me →</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero wrap" style="border-top:none;">
+    <div class="eyebrow"><span class="dot"></span> PORTFOLIO</div>
+    <h1>Things I've <span class="accent">built</span>.</h1>
+  </section>
+
+  <section class="wrap reveal">
+    <div class="project-tab-row">
+      <button class="tab-btn active" data-filter="all">All work</button>
+      <button class="tab-btn" data-filter="software">Software projects</button>
+      <button class="tab-btn" data-filter="shopify">Shopify / UI-UX</button>
+    </div>
+
+    <p class="section-kicker" style="margin-top:-24px;">To add a photo: put a "photos" folder next to this file, drop an image in as project-1.jpg (etc), then swap that project's placeholder &lt;div class="project-media"&gt; for: &lt;div class="project-media"&gt;&lt;img src="photos/project-1.jpg" alt="[Project Name] screenshot"&gt;&lt;/div&gt;</p>
+
+    <div class="projects">
+
+      <!-- EDIT ME: Project 1 (software) -->
+      <div class="project" data-category="software">
+        <div class="project-media">
+          <div class="gallery-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>photos/project-1.jpg</div>
+        </div>
+        <div class="project-body-row">
+          <div class="project-index">01</div>
+          <div>
+            <h3>[Project One Name]</h3>
+            <p>[One or two sentences on what this project does, who it's for, and the problem it solves. Mention any interesting technical decision you made.]</p>
+            <div class="chip-row">
+              <span class="chip">React</span><span class="chip">Node.js</span><span class="chip">MySQL</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="#" target="_blank" rel="noopener">Live demo ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDIT ME: Project 2 (software) -->
+      <div class="project" data-category="software">
+        <div class="project-media">
+          <div class="gallery-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>photos/project-2.jpg</div>
+        </div>
+        <div class="project-body-row">
+          <div class="project-index">02</div>
+          <div>
+            <h3>[Project Two Name]</h3>
+            <p>[One or two sentences on what this project does — the problem, your role, and the outcome.]</p>
+            <div class="chip-row">
+              <span class="chip">PHP</span><span class="chip">MySQL</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="#" target="_blank" rel="noopener">Live demo ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDIT ME: Shopify / UI-UX store 1 -->
+      <div class="project" data-category="shopify">
+        <div class="project-media">
+          <div class="gallery-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>photos/project-3.jpg</div>
+        </div>
+        <div class="project-body-row">
+          <div class="project-index">03</div>
+          <div>
+            <h3>[Shopify Store / UI Project Name]</h3>
+            <p>[What the client needed, what you designed or customized — theme edits, custom sections, checkout flow, mobile UX, etc.]</p>
+            <div class="chip-row">
+              <span class="chip">Shopify</span><span class="chip">Liquid</span><span class="chip">UI/UX</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live store ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDIT ME: Shopify / UI-UX store 2 -->
+      <div class="project" data-category="shopify">
+        <div class="project-media">
+          <div class="gallery-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>photos/project-4.jpg</div>
+        </div>
+        <div class="project-body-row">
+          <div class="project-index">04</div>
+          <div>
+            <h3>[Shopify Store / UI Project Name]</h3>
+            <p>[What the client needed, what you designed or customized.]</p>
+            <div class="chip-row">
+              <span class="chip">Shopify</span><span class="chip">UI/UX</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live store ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Built by Ganusha Eranda · <span>status: available</span></div>
+</footer>
+
+<!-- FLOATING CONTACT — EDIT ME: swap the WhatsApp number (94XXXXXXXXX, no + or 0) and email below -->
+<div class="float-contact" id="floatContact">
+  <div class="float-menu" id="floatMenu">
+    <a href="https://wa.me/94XXXXXXXXX" target="_blank" rel="noopener" class="float-item wa">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.5-1.8-.1-.2 0-.4.1-.5.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.3 0-.1-.2-.2-.4-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.5 5.1L2 22l5-1.4C8.4 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3C3.9 15 3.3 13.5 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="mailto:your.email@example.com" class="float-item mail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7L22 6"/></svg>
+      <span>Email</span>
+    </a>
+  </div>
+  <button class="float-toggle" id="floatToggle" aria-label="Contact options" aria-expanded="false">
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 01-8.5 8.5 8.4 8.4 0 01-4-1L3 20l1-4.5A8.5 8.5 0 1121 11.5z"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+</div>
+
+<script src="nav.js?v=2"></script>
+</body>
+</html>
