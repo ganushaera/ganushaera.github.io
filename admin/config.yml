@@ -2,7 +2,7 @@ backend:
   name: github
   repo: ganushaera/ganushaera.github.io   
   branch: main                                
-  base_url: https://netlify-cms-github-oauth-provider-a.vercel.app
+  base_url: https://sveltia-cms-auth.nushera99-415.workers.dev
   
 media_folder: "photos"      # uploaded photos save wenne meke
 public_folder: "photos"     # site eke pennana path eka
