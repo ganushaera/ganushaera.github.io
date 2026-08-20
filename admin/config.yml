@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME   # e.g. ganusha411/ganusha.dev
-  branch: main                                 # change to "master" if that's your default branch
-  base_url: https://YOUR-OAUTH-PROXY.vercel.app  # step 3 walkthrough eken methnata URL ekak ain­wanawa
-
+  repo: ganushaera/ganushaera.github.io   
+  branch: main                                
+  base_url: https://netlify-cms-github-oauth-provider-a.vercel.app
+  
 media_folder: "photos"      # uploaded photos save wenne meke
 public_folder: "photos"     # site eke pennana path eka
 
