@@ -1,0 +1,81 @@
+:root{--bg:#f4efe6;--ink:#16140f;--mute:#6b6458;--card:#fffaf0;--line:#d9d0bf;--acc:#e8501c;--ok:#2f7d4f}
+@media(prefers-color-scheme:dark){:root{--bg:#12110e;--ink:#f1ece0;--mute:#a39b8b;--card:#1b1914;--line:#34302a;--acc:#ff7a45;--ok:#5fc08a}}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 'Bricolage Grotesque',system-ui,sans-serif;-webkit-text-size-adjust:100%}
+a{color:inherit}
+.mono{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:0;z-index:9;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;letter-spacing:-.02em;text-decoration:none;font-size:18px}
+.logo i{color:var(--acc);font-style:normal}
+.links{display:flex;gap:6px;align-items:center}
+.links a{text-decoration:none;font-size:15px;padding:8px 13px;border-radius:99px;color:var(--mute)}
+.links a:hover{color:var(--ink)}
+.links a.on{background:var(--ink);color:var(--bg)}
+.links a.hire{border:1.5px solid var(--acc);color:var(--acc)}
+#tg{display:none;background:none;border:1.5px solid var(--ink);color:var(--ink);border-radius:8px;width:42px;height:38px;font-size:20px;cursor:pointer}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;padding:64px 0 52px}
+h1{font-size:clamp(38px,6.4vw,72px);line-height:1;font-weight:800;letter-spacing:-.035em;margin:16px 0 20px}
+h1 em{font-style:normal;color:var(--acc);background:linear-gradient(transparent 82%,color-mix(in srgb,var(--acc) 28%,transparent) 0)}
+.ph{padding:56px 0 12px}
+.ph h1{font-size:clamp(34px,5.5vw,56px);margin:10px 0 10px}
+.ph p{color:var(--mute);max-width:56ch}
+.lead{max-width:52ch;color:var(--mute);font-size:19px}
+.lead strong{color:var(--ink);font-weight:600}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;border:1.5px solid var(--ink)}
+.btn.p{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--acc);background:var(--acc);color:#fff}
+.ticket{background:var(--card);border:1.5px solid var(--ink);border-radius:12px;overflow:hidden;box-shadow:8px 8px 0 var(--acc);transform:rotate(1.5deg)}
+.ticket img{display:block;width:100%;aspect-ratio:4/4.3;object-fit:cover;object-position:top;border-bottom:1.5px dashed var(--ink)}
+.ticket dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;padding:16px 18px;font:500 12.5px 'IBM Plex Mono',monospace}
+.ticket dt{color:var(--mute);text-transform:uppercase}
+.ticket dd{text-align:right}
+.ok{color:var(--ok)}
+.ok:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ok);margin-right:6px}
+.strip{border-block:1px solid var(--line);padding:14px 0;overflow-x:auto}
+.strip .wrap{display:flex;gap:32px;white-space:nowrap}
+section{padding:44px 0 4px}
+h2{font-size:clamp(26px,4vw,38px);letter-spacing:-.03em;font-weight:800;margin:6px 0 24px}
+.log{border-left:2px solid var(--ink);margin-left:6px}
+.job{position:relative;padding:0 0 30px 26px}
+.job:before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;background:var(--acc);border:2px solid var(--bg);border-radius:50%}
+.job h3{font-size:21px;letter-spacing:-.02em;line-height:1.25;margin-top:2px}
+.job h3 span{display:block;color:var(--mute);font-weight:400;font-size:16px}
+.job ul{margin:10px 0 0 18px;color:var(--mute)}
+.job li{margin:4px 0;max-width:70ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;text-decoration:none}
+.card h3{font-size:19px;letter-spacing:-.01em;margin:4px 0 8px}
+.card p{color:var(--mute);font-size:15.5px}
+a.card:hover,.card:hover{border-color:var(--acc)}
+.go{color:var(--acc);font-weight:600;display:inline-block;margin-top:10px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chips span{font:12px 'IBM Plex Mono',monospace;padding:4px 10px;border:1px solid var(--line);border-radius:99px;background:var(--bg)}
+.certs a{display:block;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.certs a:hover{color:var(--acc)}
+.certs small{display:block;color:var(--mute);font-size:14px}
+.big{display:flex;flex-direction:column;gap:12px;max-width:520px}
+.big a{display:flex;justify-content:space-between;gap:12px;padding:18px 20px;border:1.5px solid var(--ink);border-radius:12px;text-decoration:none;font-weight:600;background:var(--card);word-break:break-all}
+.big a:hover{background:var(--acc);border-color:var(--acc);color:#fff}
+footer{margin-top:64px;padding:26px 0;border-top:1px solid var(--line);text-align:center}
+@media(max-width:780px){
+ .hero{grid-template-columns:1fr;gap:34px;padding:36px 0 36px}.ticket{max-width:330px;transform:none;margin:0 auto 8px;order:-1}
+ #tg{display:block}
+ .links{display:none;position:absolute;top:60px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 22px 16px;gap:4px}
+ .links.open{display:flex}
+ .links a{padding:13px 14px;font-size:17px}
+ body{font-size:16.5px}
+ .cta .btn{flex:1;text-align:center}
+}
+
+.badges{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:14px}
+.badges figure{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 12px 12px;text-align:center;transition:transform .2s,border-color .2s}
+.badges figure:hover{transform:translateY(-4px) rotate(-1deg);border-color:var(--acc)}
+.badges img{display:block;width:100%;height:92px;object-fit:contain;margin:0 auto 10px}
+.badges figcaption{font-size:11px;line-height:1.3}
+.badges.sm{grid-template-columns:repeat(auto-fit,minmax(78px,1fr));gap:10px;margin:14px 0 4px}
+.badges.sm figure{padding:10px}
+.badges.sm img{height:58px;margin:0}
+@media(max-width:780px){.badges{grid-template-columns:repeat(2,1fr)}.badges.sm{grid-template-columns:repeat(4,1fr)}}
